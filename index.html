@@ -1,58 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>i-coder </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-coder</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Enlace al archivo CSS personalizado -->
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">i-coder</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/i-coder/index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/i-coder/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html/About.html">About </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html/Contactus.html">Contact us </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            topic
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">technology</a></li>
-                            <li><a class="dropdown-item" href="#">tech updates </a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Support</a></li>
-                            <li><a class="dropdown-item" href="#">write for us </a></li>
-                        </ul>
+                        <a class="nav-link active" aria-current="page" href="/i-coder/index.html">Contenido</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -61,237 +29,400 @@
                 </form>
             </div>
             <div class="mx-2">
-                <button class="btn btn-outline-danger" data-bs-toggle="modal"
-                data-bs-target="#loginModal">login</button>
-                <button class="btn btn-outline-danger" data-bs-toggle="modal"
-                    data-bs-target="#singupModal">singup</button>
+                <p style="color: white;">Presentado por Oswaldo Soto CI 27549515</p>
             </div>
         </div>
     </nav>
 
-   <!-- loginModal -->
-   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">login icoder</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">login</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
+    <div class="container mt-4">
+        <div class="row mt-4">
+            <div class="col-12 mb-4">
+                <h2>Bases de Datos Distribuidas</h2>
+        
+                <section>
+                    <h3>Definición y Ejemplos</h3>
+                    <p>Las bases de datos distribuidas son sistemas en los que los datos se almacenan en múltiples ubicaciones físicas, pero se presentan como un único sistema lógico. Este enfoque permite la fragmentación y replicación de datos para mejorar la disponibilidad, la escalabilidad y la resiliencia del sistema.</p>
+                    <p>En una base de datos distribuida, los datos pueden ser fragmentados en varias partes (fragmentación horizontal o vertical) y almacenados en diferentes nodos. La replicación asegura que los datos estén disponibles incluso si un nodo falla. Estos sistemas también permiten el acceso concurrente y la sincronización de datos entre nodos.</p>
+                    
+                    <h4>Ejemplos de Bases de Datos Distribuidas:</h4>
+                    <ul>
+                        <li><strong>Google Spanner:</strong> Un sistema de base de datos relacional distribuida que combina la consistencia transaccional global con la escalabilidad horizontal. Utiliza un enfoque de sincronización de tiempo global para mantener la consistencia y la alta disponibilidad en todo el mundo.</li>
+                        <li><strong>Apache Cassandra:</strong> Una base de datos NoSQL distribuida que ofrece alta disponibilidad sin comprometer la escalabilidad. Cassandra utiliza un modelo de replicación basado en nodos para garantizar que los datos estén disponibles y sean consistentes en todo momento, incluso en caso de fallos de nodo.</li>
+                        <li><strong>Amazon DynamoDB:</strong> Un servicio de base de datos NoSQL administrado por Amazon que proporciona alta disponibilidad y rendimiento con escalabilidad automática. DynamoDB es ideal para aplicaciones que requieren un alto rendimiento y un acceso de baja latencia a datos distribuidos.</li>
+                        <li><strong>MongoDB:</strong> Otra base de datos NoSQL que permite una distribución flexible de datos mediante fragmentación y replicación. MongoDB es conocida por su facilidad de uso y su capacidad para manejar datos semi-estructurados en entornos distribuidos.</li>
+                        <li><strong>CockroachDB:</strong> Un sistema de base de datos SQL distribuida diseñado para ser altamente disponible y escalable. CockroachDB asegura la consistencia a nivel global mediante un protocolo de consenso basado en Raft.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Análisis Técnico de Arquitecturas de Sistemas Distribuidos</h3>
+                    <p>Las arquitecturas de sistemas distribuidos permiten la coordinación y comunicación entre múltiples nodos para proporcionar un servicio o gestionar datos. A continuación se describen algunas de las arquitecturas más comunes:</p>
+        
+                    <h4>Arquitectura Cliente-Servidor</h4>
+                    <p>En esta arquitectura, los clientes envían solicitudes a un servidor centralizado que gestiona y proporciona los recursos o servicios solicitados. El servidor actúa como el punto único de procesamiento y almacenamiento, mientras que los clientes interactúan con el servidor para acceder a datos o realizar operaciones.</p>
+                    <p><strong>Ventajas:</strong> Simplicidad en la administración y mantenimiento, control centralizado de datos, y seguridad controlada desde el servidor.</p>
+                    <p><strong>Desventajas:</strong> Puede presentar un punto único de fallo, problemas de escalabilidad si el servidor se sobrecarga, y potenciales cuellos de botella en el rendimiento.</p>
+        
+                    <h4>Arquitectura P2P (Peer-to-Peer)</h4>
+                    <p>En una arquitectura Peer-to-Peer (P2P), cada nodo en la red actúa tanto como cliente como servidor. Los nodos comparten recursos y servicios directamente entre sí, sin necesidad de un servidor central. Esta arquitectura distribuye la carga de trabajo y elimina puntos únicos de fallo.</p>
+                    <p><strong>Ventajas:</strong> Escalabilidad eficiente, mayor resiliencia frente a fallos de nodos individuales, y distribución equitativa de recursos.</p>
+                    <p><strong>Desventajas:</strong> Mayor complejidad en la gestión y sincronización de datos, posibles problemas de seguridad debido a la falta de un control centralizado, y dificultades para asegurar la consistencia de datos.</p>
+        
+                    <h4>Arquitectura Basada en Microservicios</h4>
+                    <p>La arquitectura basada en microservicios divide una aplicación en una colección de servicios independientes que se comunican entre sí a través de interfaces bien definidas, como APIs. Cada servicio es responsable de una funcionalidad específica y puede ser desarrollado, desplegado y escalado de manera independiente.</p>
+                    <p><strong>Ventajas:</strong> Flexibilidad en el desarrollo y despliegue de servicios, escalabilidad granular, y facilidad para actualizar o reemplazar servicios sin afectar al sistema completo.</p>
+                    <p><strong>Desventajas:</strong> Complejidad en la integración y comunicación entre microservicios, necesidad de herramientas y procesos adicionales para la gestión de servicios, y posibles problemas de consistencia de datos debido a la distribución de servicios.</p>
+        
+                    <h4>Arquitectura de Mensajería</h4>
+                    <p>La arquitectura de mensajería utiliza un sistema de intermediación, como un broker de mensajes, para facilitar la comunicación entre diferentes componentes de un sistema distribuido. Los mensajes son enviados desde un productor a un consumidor a través del broker, que gestiona la entrega y el enrutamiento de mensajes.</p>
+                    <p><strong>Ventajas:</strong> Desacoplamiento entre productores y consumidores, capacidad de manejar grandes volúmenes de mensajes, y soporte para patrones de comunicación asíncrona.</p>
+                    <p><strong>Desventajas:</strong> Complejidad en la configuración y gestión del broker de mensajes, latencia adicional en la entrega de mensajes, y posibles desafíos en la gestión de transacciones y consistencia de datos.</p>
+                </section>
             </div>
         </div>
+        
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2>Línea de Tiempo del Sistema Operativo UNIX</h2>
+                <section>
+                    <h3>1969 - Creación de UNIX</h3>
+                    <p>UNIX fue desarrollado por Ken Thompson, Dennis Ritchie y otros miembros de los Laboratorios Bell en AT&T. El sistema operativo fue creado como un proyecto de investigación para proporcionar un entorno multitarea y multiusuario en una máquina PDP-7. La primera versión de UNIX fue notable por su diseño modular y su uso extensivo del lenguaje de programación C, facilitando su portabilidad a diferentes sistemas.</p>
+        
+                    <h3>1971 - Publicación de la Versión 1 de UNIX</h3>
+                    <p>La versión 1 de UNIX fue lanzada en 1971. Esta primera versión sentó las bases del sistema operativo y se introdujo el concepto de sistema de archivos jerárquico. Aunque primitiva en comparación con versiones posteriores, esta versión estableció principios que se mantendrían en futuras iteraciones.</p>
+        
+                    <h3>1973 - Reescritura en C y Versión 4</h3>
+                    <p>En 1973, UNIX fue reescrito en el lenguaje de programación C por Dennis Ritchie y Brian Kernighan. Esto permitió una mayor portabilidad del sistema operativo y facilitó su adaptación a diferentes plataformas de hardware. La versión 4 de UNIX, lanzada en 1973, también introdujo nuevas características importantes como la paginación de memoria.</p>
+        
+                    <h3>1979 - UNIX Versión 7</h3>
+                    <p>UNIX Versión 7, lanzada en 1979, es considerada una de las versiones más influyentes y estables de UNIX. Esta versión consolidó muchas de las características que definirían al sistema operativo, como el sistema de archivos jerárquico, la shell de UNIX, y el entorno de programación en C.</p>
+        
+                    <h3>1983 - Iniciativa POSIX</h3>
+                    <p>La Iniciativa POSIX (Portable Operating System Interface) fue lanzada para estandarizar los sistemas operativos basados en UNIX y facilitar la portabilidad de aplicaciones. POSIX definió una serie de estándares y especificaciones para asegurar que los programas pudieran funcionar en diferentes sistemas UNIX.</p>
+        
+                    <h3>1984 - GNU y el Proyecto GNU</h3>
+                    <p>Richard Stallman lanzó el Proyecto GNU en 1984 para desarrollar un sistema operativo libre y compatible con UNIX. Aunque el proyecto tenía como objetivo crear un sistema completo, el núcleo del sistema operativo GNU (Hurd) aún no estaba completamente desarrollado, lo que llevó a la adopción del núcleo Linux para completar el sistema.</p>
+        
+                    <h3>1991 - Lanzamiento de Linux</h3>
+                    <p>Linus Torvalds lanzó la primera versión del núcleo Linux en 1991. Linux fue diseñado como un sistema operativo libre y de código abierto que implementaba muchos de los principios de UNIX. La combinación del núcleo Linux con las herramientas del Proyecto GNU resultó en una alternativa completa y funcional a los sistemas UNIX comerciales.</p>
+        
+                    <h3>1993 - La Fundación Linux y la Expansión de Linux</h3>
+                    <p>En 1993, la Fundación Linux fue establecida para promover el desarrollo y la difusión del sistema operativo Linux. Durante esta década, Linux ganó popularidad y comenzó a ser adoptado por empresas y usuarios individuales como una alternativa viable a los sistemas operativos propietarios.</p>
+        
+                    <h3>2001 - Introducción de Mac OS X</h3>
+                    <p>Apple lanzó Mac OS X en 2001, un sistema operativo que combina el núcleo de UNIX con una interfaz gráfica de usuario moderna. Mac OS X se basa en NeXTSTEP, que a su vez estaba basado en UNIX, y ofrece un entorno UNIX robusto con una interfaz de usuario intuitiva.</p>
+        
+                    <h3>2008 - La Popularidad de Android</h3>
+                    <p>Android, un sistema operativo basado en el núcleo de Linux, fue lanzado en 2008 y rápidamente se convirtió en una plataforma dominante en el mercado de dispositivos móviles. Android llevó los principios de UNIX y Linux a una amplia gama de dispositivos, desde teléfonos inteligentes hasta tabletas y dispositivos de IoT.</p>
+        
+                    <h3>2010 - Introducción de Ubuntu en el Mercado de Servidores</h3>
+                    <p>Ubuntu, una distribución de Linux basada en Debian, ganó prominencia en el mercado de servidores y como sistema operativo de escritorio en 2010. Ubuntu ha sido adoptado por muchas organizaciones y es conocido por su facilidad de uso y su enfoque en la accesibilidad.</p>
+        
+                    <h3>2020 - Actualizaciones y Evolución Continua</h3>
+                    <p>En la actualidad, UNIX y sus derivados continúan evolucionando. Las versiones modernas de sistemas basados en UNIX, como Linux y macOS, siguen incorporando nuevas tecnologías y mejoras en seguridad, rendimiento y usabilidad. La comunidad de código abierto sigue desempeñando un papel crucial en el desarrollo continuo y la evolución de estos sistemas.</p>
+                </section>
+            </div>
+        </div>
+        
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2>Comandos de Usuarios en UNIX</h2>
+                <h3>Comandos Básicos de UNIX y Ejemplos</h3>
+                <ul>
+                    <li><strong>ls:</strong> Listar directorios y archivos.
+                        <ul>
+                            <li><code>ls</code> - Muestra una lista de archivos y directorios en el directorio actual.</li>
+                            <li><code>ls -l</code> - Muestra la lista de archivos en formato largo, incluyendo permisos, propietario, tamaño y fecha de modificación.</li>
+                            <li><code>ls -a</code> - Muestra todos los archivos, incluidos los ocultos (los que comienzan con un punto).</li>
+                        </ul>
+                    </li>
+                    <li><strong>cd:</strong> Cambiar directorio.
+                        <ul>
+                            <li><code>cd /home/user</code> - Cambia al directorio especificado (/home/user).</li>
+                            <li><code>cd ..</code> - Cambia al directorio padre del directorio actual.</li>
+                            <li><code>cd ~</code> - Cambia al directorio home del usuario actual.</li>
+                        </ul>
+                    </li>
+                    <li><strong>pwd:</strong> Mostrar el directorio actual.
+                        <ul>
+                            <li><code>pwd</code> - Imprime la ruta completa del directorio de trabajo actual.</li>
+                        </ul>
+                    </li>
+                    <li><strong>mkdir:</strong> Crear un nuevo directorio.
+                        <ul>
+                            <li><code>mkdir nombre_directorio</code> - Crea un nuevo directorio con el nombre especificado.</li>
+                        </ul>
+                    </li>
+                    <li><strong>rmdir:</strong> Eliminar un directorio vacío.
+                        <ul>
+                            <li><code>rmdir nombre_directorio</code> - Elimina el directorio vacío especificado.</li>
+                        </ul>
+                    </li>
+                    <li><strong>rm:</strong> Eliminar archivos y directorios.
+                        <ul>
+                            <li><code>rm archivo</code> - Elimina el archivo especificado.</li>
+                            <li><code>rm -r directorio</code> - Elimina el directorio y su contenido de forma recursiva.</li>
+                            <li><code>rm -f archivo</code> - Elimina el archivo sin pedir confirmación, incluso si el archivo es de solo lectura.</li>
+                        </ul>
+                    </li>
+                    <li><strong>cp:</strong> Copiar archivos y directorios.
+                        <ul>
+                            <li><code>cp archivo destino</code> - Copia el archivo especificado al destino.</li>
+                            <li><code>cp -r directorio destino</code> - Copia el directorio y su contenido de forma recursiva al destino.</li>
+                        </ul>
+                    </li>
+                    <li><strong>mv:</strong> Mover o renombrar archivos y directorios.
+                        <ul>
+                            <li><code>mv archivo destino</code> - Mueve o renombra el archivo especificado al destino.</li>
+                            <li><code>mv directorio destino</code> - Mueve o renombra el directorio especificado al destino.</li>
+                        </ul>
+                    </li>
+                    <li><strong>cat:</strong> Mostrar el contenido de archivos.
+                        <ul>
+                            <li><code>cat archivo</code> - Muestra el contenido del archivo especificado.</li>
+                            <li><code>cat archivo1 archivo2 > archivo3</code> - Combina el contenido de archivo1 y archivo2 y lo guarda en archivo3.</li>
+                        </ul>
+                    </li>
+                    <li><strong>more:</strong> Ver el contenido de archivos página por página.
+                        <ul>
+                            <li><code>more archivo</code> - Muestra el contenido del archivo página por página.</li>
+                        </ul>
+                    </li>
+                    <li><strong>less:</strong> Ver el contenido de archivos de manera interactiva.
+                        <ul>
+                            <li><code>less archivo</code> - Muestra el contenido del archivo con la capacidad de desplazarse hacia adelante y hacia atrás.</li>
+                        </ul>
+                    </li>
+                    <li><strong>head:</strong> Mostrar las primeras líneas de un archivo.
+                        <ul>
+                            <li><code>head archivo</code> - Muestra las primeras 10 líneas del archivo.</li>
+                            <li><code>head -n 20 archivo</code> - Muestra las primeras 20 líneas del archivo.</li>
+                        </ul>
+                    </li>
+                    <li><strong>tail:</strong> Mostrar las últimas líneas de un archivo.
+                        <ul>
+                            <li><code>tail archivo</code> - Muestra las últimas 10 líneas del archivo.</li>
+                            <li><code>tail -n 20 archivo</code> - Muestra las últimas 20 líneas del archivo.</li>
+                            <li><code>tail -f archivo</code> - Muestra las nuevas líneas añadidas al archivo en tiempo real.</li>
+                        </ul>
+                    </li>
+                    <li><strong>chmod:</strong> Cambiar permisos de archivos y directorios.
+                        <ul>
+                            <li><code>chmod 755 archivo</code> - Establece los permisos del archivo a rwxr-xr-x.</li>
+                            <li><code>chmod u+x archivo</code> - Añade el permiso de ejecución al propietario del archivo.</li>
+                        </ul>
+                    </li>
+                    <li><strong>chown:</strong> Cambiar el propietario de archivos y directorios.
+                        <ul>
+                            <li><code>chown usuario:grupo archivo</code> - Cambia el propietario y el grupo del archivo.</li>
+                        </ul>
+                    </li>
+                    <li><strong>ps:</strong> Mostrar información sobre procesos en ejecución.
+                        <ul>
+                            <li><code>ps</code> - Muestra una lista de procesos en el terminal actual.</li>
+                            <li><code>ps aux</code> - Muestra una lista completa de todos los procesos en el sistema.</li>
+                        </ul>
+                    </li>
+                    <li><strong>top:</strong> Mostrar información dinámica sobre procesos en ejecución.
+                        <ul>
+                            <li><code>top</code> - Muestra una vista en tiempo real de los procesos en ejecución, incluyendo uso de CPU y memoria.</li>
+                        </ul>
+                    </li>
+                    <li><strong>grep:</strong> Buscar texto dentro de archivos.
+                        <ul>
+                            <li><code>grep "texto" archivo</code> - Busca "texto" en el archivo y muestra las líneas que lo contienen.</li>
+                            <li><code>grep -r "texto" directorio</code> - Busca recursivamente "texto" en todos los archivos dentro del directorio.</li>
+                        </ul>
+                    </li>
+                    <li><strong>find:</strong> Buscar archivos y directorios.
+                        <ul>
+                            <li><code>find /ruta -name "nombre_archivo"</code> - Busca archivos o directorios con el nombre especificado en la ruta dada.</li>
+                            <li><code>find /ruta -type f -name "*.txt"</code> - Busca archivos con extensión .txt en la ruta dada.</li>
+                        </ul>
+                    </li>
+                    <li><strong>tar:</strong> Crear y extraer archivos tar.
+                        <ul>
+                            <li><code>tar -cvf archivo.tar directorio</code> - Crea un archivo tar del directorio especificado.</li>
+                            <li><code>tar -xvf archivo.tar</code> - Extrae el contenido del archivo tar.</li>
+                        </ul>
+                    </li>
+                    <li><strong>gzip:</strong> Comprimir archivos.
+                        <ul>
+                            <li><code>gzip archivo</code> - Comprime el archivo y lo reemplaza con archivo.gz.</li>
+                            <li><code>gzip -d archivo.gz</code> - Descomprime el archivo.gz.</li>
+                        </ul>
+                    </li>
+                    <li><strong>man:</strong> Mostrar el manual de comandos.
+                        <ul>
+                            <li><code>man comando</code> - Muestra el manual del comando especificado.</li>
+                        </ul>
+                    </li>
+                    <li><strong>echo:</strong> Mostrar mensajes o variables.
+                        <ul>
+                            <li><code>echo "mensaje"</code> - Muestra el mensaje en la salida estándar.</li>
+                            <li><code>echo $VARIABLE</code> - Muestra el valor de la variable de entorno especificada.</li>
+                        </ul>
+                    </li>
+                    <li><strong>history:</strong> Mostrar el historial de comandos.
+                        <ul>
+                            <li><code>history</code> - Muestra una lista de los comandos ejecutados anteriormente.</li>
+                        </ul>
+                    </li>
+                    <li><strong>alias:</strong> Crear alias para comandos.
+                        <ul>
+                            <li><code>alias ll='ls -l'</code>
+                        </ul>    
+                    </li>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2>Linux: Evolución Histórica, Definición, Ventajas y Desventajas, Partes del Sistema Operativo</h2>
+                <h3>Evolución Histórica de Linux</h3>
+                <p>Linux fue creado por Linus Torvalds en 1991 como un sistema operativo libre basado en UNIX, marcando el inicio de una revolución en el software de código abierto. El primer kernel, Linux 0.01, fue lanzado en septiembre de 1991. En 1992, Torvalds liberó Linux bajo la Licencia Pública General de GNU (GPL), permitiendo la colaboración global y el desarrollo de distribuciones como Slackware y Debian. A mediados de los años 90, Linux se estabilizó con la versión 1.2 y comenzó a ganar popularidad en el ámbito empresarial, impulsado por empresas como Red Hat y SUSE. En el nuevo milenio, Linux se consolidó en servidores y supercomputadoras, y su influencia creció con la aparición de entornos de escritorio como GNOME y KDE. La segunda mitad de la década de 2000 vio el auge de Linux en la computación en la nube y dispositivos móviles, especialmente con Android. En la última década, Linux ha dominado servidores, supercomputadoras, y sistemas embebidos, mientras que tecnologías emergentes como Docker y Kubernetes han reforzado su posición. Mirando hacia el futuro, Linux continúa evolucionando y adaptándose, gracias a la colaboración de la comunidad de código abierto y su integración en nuevas tecnologías y dispositivos.</p>
+                <h3>Definición</h3>
+                <p>Linux es un sistema operativo de código abierto, basado en UNIX, que se utiliza ampliamente en servidores, dispositivos móviles, sistemas embebidos y PCs.</p>
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Código Abierto:</strong> Libre para usar, modificar y distribuir.</li>
+                    <li><strong>Seguridad:</strong> Alta seguridad y menor vulnerabilidad a virus.</li>
+                    <li><strong>Estabilidad:</strong> Excelente estabilidad y manejo de cargas de trabajo.</li>
+                    <li><strong>Comunidad Activa:</strong> Gran soporte y constante desarrollo.</li>
+                </ul>
+                <h3>Desventajas</h3>
+                <ul>
+                    <li><strong>Curva de Aprendizaje:</strong> Puede ser complicado para nuevos usuarios.</li>
+                    <li><strong>Compatibilidad de Software:</strong> Algunos programas no están disponibles o son más difíciles de configurar.</li>
+                    <li><strong>Soporte Profesional:</strong> Puede ser limitado en comparación con sistemas operativos comerciales.</li>
+                </ul>
+                <h3>Partes del Sistema Operativo</h3>
+                <ul>
+                    <li><strong>Núcleo (Kernel):</strong> El núcleo del sistema operativo que gestiona el hardware.</li>
+                    <li><strong>Shell:</strong> Interfaz de usuario que permite la interacción con el sistema operativo.</li>
+                    <li><strong>Sistema de Archivos:</strong> Organización y gestión de datos.</li>
+                    <li><strong>Gestor de Paquetes:</strong> Herramientas para la instalación y gestión de software.</li>
+                    <li><strong>Servicios del Sistema:</strong> Programas que corren en segundo plano para realizar tareas específicas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 mb-4">
+                <h2>Introducción a las Redes</h2>
+                <p>Las redes informáticas son sistemas de interconexión de múltiples dispositivos que permiten compartir recursos y comunicarse entre sí. En esta sección, exploraremos los conceptos básicos de las redes, sus tipos y topologías, y algunos de los componentes y tecnologías clave.</p>
+                
+                <section>
+                    <h3>Conceptos Básicos de Redes</h3>
+                    <p>Una red informática es un conjunto de dispositivos conectados que se comunican entre sí para compartir información y recursos. Estos dispositivos pueden incluir computadoras, servidores, impresoras, routers, switches y otros equipos. Las redes pueden variar en tamaño desde redes locales simples en una oficina hasta redes globales como Internet.</p>
+                    
+                    <ul>
+                        <li><strong>Red:</strong> Un grupo de dispositivos interconectados que pueden intercambiar datos.</li>
+                        <li><strong>Protocolo:</strong> Un conjunto de reglas que define cómo se transmiten los datos a través de la red.</li>
+                        <li><strong>Dirección IP:</strong> Una etiqueta numérica asignada a cada dispositivo en una red para su identificación.</li>
+                        <li><strong>Enlace de Datos:</strong> La conexión física o lógica entre dos dispositivos en una red.</li>
+                        <li><strong>Paquete:</strong> Una unidad de datos transmitida a través de una red.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Tipos de Redes</h3>
+                    <p>Las redes pueden clasificarse en función de su alcance geográfico, su propósito y la tecnología que utilizan. A continuación se describen algunos tipos comunes:</p>
+                    <ul>
+                        <li><strong>LAN (Red de Área Local):</strong> Red que conecta dispositivos en un área geográfica limitada, como una oficina o un hogar. Permite compartir recursos como archivos e impresoras dentro de una proximidad cercana.</li>
+                        <li><strong>WAN (Red de Área Amplia):</strong> Red que abarca áreas geográficas extensas, conectando múltiples LANs a través de distancias largas, como entre ciudades o países. Ejemplo: Internet.</li>
+                        <li><strong>MAN (Red de Área Metropolitana):</strong> Red que cubre un área geográfica mayor que una LAN pero menor que una WAN, como una ciudad o una región. A menudo utilizada por proveedores de servicios de Internet para conectar áreas urbanas.</li>
+                        <li><strong>CAN (Red de Área de Campus):</strong> Red que abarca un campus o una universidad. Conecta múltiples edificios o departamentos dentro de una institución.</li>
+                        <li><strong>HAN (Red de Área Hogareña):</strong> Una red doméstica que conecta dispositivos dentro de un hogar, como computadoras, impresoras y dispositivos inteligentes.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Topologías de Red</h3>
+                    <p>La topología de una red se refiere a la disposición física y lógica de sus componentes. Existen varias topologías comunes que se utilizan en la práctica:</p>
+                    <ul>
+                        <li><strong>Topología de Estrella:</strong> Todos los dispositivos están conectados a un único nodo central, como un switch o un hub. Es fácil de administrar y expandir, pero el nodo central representa un punto de fallo.</li>
+                        <li><strong>Topología de Bus:</strong> Todos los dispositivos están conectados a un único cable de bus. Es simple y económica, pero puede haber problemas de rendimiento con muchos dispositivos.</li>
+                        <li><strong>Topología de Anillo:</strong> Cada dispositivo está conectado a dos dispositivos adyacentes, formando un anillo. Los datos circulan en una dirección a lo largo del anillo. Ofrece un rendimiento predecible pero es sensible a fallos.</li>
+                        <li><strong>Topología de Malla:</strong> Cada dispositivo está conectado a varios otros dispositivos. Proporciona alta redundancia y confiabilidad, pero puede ser costosa y compleja de implementar.</li>
+                        <li><strong>Topología de Árbol:</strong> Una combinación de topologías de estrella y bus, con dispositivos conectados a un nodo central que está a su vez conectado a otros nodos centrales. Ofrece escalabilidad y es útil para redes grandes.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Componentes Clave de una Red</h3>
+                    <p>Algunos de los componentes esenciales en una red incluyen:</p>
+                    <ul>
+                        <li><strong>Router:</strong> Dispositivo que dirige el tráfico entre diferentes redes y gestiona la comunicación entre la red local y otras redes, como Internet.</li>
+                        <li><strong>Switch:</strong> Dispositivo que conecta varios dispositivos dentro de una red local y dirige el tráfico de datos entre ellos.</li>
+                        <li><strong>Hub:</strong> Dispositivo que conecta múltiples dispositivos en una red de área local, enviando datos a todos los dispositivos conectados. Menos eficiente que un switch.</li>
+                        <li><strong>Modem:</strong> Dispositivo que modula y demodula señales para la transmisión de datos a través de líneas telefónicas o cable.</li>
+                        <li><strong>Firewall:</strong> Dispositivo o software que protege la red de accesos no autorizados y ataques cibernéticos, controlando el tráfico de entrada y salida.</li>
+                        <li><strong>Cableado:</strong> Los cables físicos, como cables Ethernet, que conectan los dispositivos de red. También incluye medios de comunicación inalámbrica.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Protocolos de Red</h3>
+                    <p>Los protocolos son conjuntos de reglas que determinan cómo se transmiten y reciben los datos en una red. Algunos protocolos fundamentales incluyen:</p>
+                    <ul>
+                        <li><strong>TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet):</strong> Conjunto de protocolos que forman la base de Internet y permiten la comunicación entre diferentes redes.</li>
+                        <li><strong>HTTP (Protocolo de Transferencia de Hipertexto):</strong> Utilizado para la transferencia de información en la web.</li>
+                        <li><strong>FTP (Protocolo de Transferencia de Archivos):</strong> Utilizado para la transferencia de archivos entre un cliente y un servidor.</li>
+                        <li><strong>SMTP (Protocolo Simple de Transferencia de Correo):</strong> Utilizado para el envío de correos electrónicos.</li>
+                        <li><strong>DNS (Sistema de Nombres de Dominio):</strong> Traduce nombres de dominio legibles por humanos a direcciones IP numéricas.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Seguridad en Redes</h3>
+                    <p>La seguridad en redes es crucial para proteger los datos y recursos contra accesos no autorizados y amenazas. Algunas prácticas de seguridad incluyen:</p>
+                    <ul>
+                        <li><strong>Autenticación:</strong> Verificación de la identidad de los usuarios que intentan acceder a la red.</li>
+                        <li><strong>Encriptación:</strong> Cifrado de datos para proteger la información durante la transmisión.</li>
+                        <li><strong>Control de Acceso:</strong> Implementación de políticas para permitir o restringir el acceso a ciertos recursos de la red.</li>
+                        <li><strong>Monitorización:</strong> Supervisión continua de la red para detectar y responder a incidentes de seguridad.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2>¿Qué es un Sistema Operativo?</h2>
+                <p>Un sistema operativo (SO) es el software fundamental que actúa como intermediario entre el hardware de un ordenador y las aplicaciones que se ejecutan en él. Su principal función es gestionar los recursos del sistema, como el procesador, la memoria, y los dispositivos de entrada y salida, asegurando que cada aplicación tenga acceso a estos recursos de manera eficiente. Además, el sistema operativo proporciona una interfaz de usuario, ya sea gráfica (GUI) o de línea de comandos (CLI), que permite a los usuarios interactuar con el sistema y sus aplicaciones. Sin un sistema operativo, el hardware del ordenador no podría ejecutar programas o gestionar las tareas de forma organizada.</p>
+                
+                <h3>Tipos de Sistema Operativo</h3>
+                <p>Existen diversos tipos de sistemas operativos, cada uno adaptado a diferentes necesidades y entornos:</p>
+                <ul>
+                    <li><strong>Sistemas Operativos Monousuario:</strong> Diseñados para ser utilizados por una sola persona a la vez, estos sistemas operativos gestionan los recursos para un único usuario. Ejemplos incluyen versiones básicas de Windows y macOS que se utilizan en computadoras personales.</li>
+                    <li><strong>Sistemas Operativos Multiusuario:</strong> Permiten que múltiples usuarios utilicen el sistema al mismo tiempo, cada uno con sus propios permisos y recursos. Son comunes en servidores y estaciones de trabajo compartidas. Ejemplos incluyen Unix, Linux, y Windows Server.</li>
+                    <li><strong>Sistemas Operativos de Tiempo Real:</strong> Están diseñados para proporcionar respuestas inmediatas a eventos o inputs, asegurando que las operaciones se realicen dentro de límites de tiempo estrictos. Se utilizan en sistemas críticos como controles industriales, aeronaves y dispositivos médicos. Ejemplos incluyen RTOS (Real-Time Operating Systems) como VxWorks y QNX.</li>
+                </ul>
+                
+                <h3>Sistemas Operativos de Red</h3>
+                <p>Los sistemas operativos de red están diseñados para gestionar y facilitar la comunicación y el intercambio de recursos entre computadoras conectadas en una red. Estos sistemas proporcionan servicios como la administración de usuarios, la asignación de direcciones IP, y la compartición de archivos y recursos. Son esenciales para el funcionamiento de redes corporativas y domésticas. Ejemplos incluyen:</p>
+                <ul>
+                    <li><strong>Microsoft Windows Server:</strong> Ofrece herramientas para la administración de redes, incluyendo Active Directory para la gestión de usuarios y grupos.</li>
+                    <li><strong>Linux (con configuraciones específicas):</strong> Usado ampliamente en servidores de red, ofrece flexibilidad y potencia en la administración de redes a través de herramientas como Samba y NFS.</li>
+                    <li><strong>Novell NetWare:</strong> Fue popular en las décadas de 1980 y 1990, conocido por su robusto sistema de administración de redes.</li>
+                </ul>
+                
+                <h3>Sistemas Operativos para Equipos Servidores</h3>
+                <p>Los sistemas operativos para equipos servidores están optimizados para manejar grandes volúmenes de datos y múltiples conexiones simultáneas, proporcionando alta disponibilidad y seguridad. Estos sistemas están diseñados para gestionar recursos de red, ofrecer servicios a otros equipos y garantizar el funcionamiento continuo de aplicaciones críticas. Ejemplos incluyen:</p>
+                <ul>
+                    <li><strong>Windows Server:</strong> Proporciona una plataforma robusta para aplicaciones empresariales, servicios web y administración de red.</li>
+                    <li><strong>Linux Server:</strong> Amplamente utilizado en servidores web, bases de datos y otros servicios críticos debido a su estabilidad y flexibilidad. Distribuciones como Ubuntu Server y CentOS son comunes en entornos de servidores.</li>
+                    <li><strong>UNIX:</strong> Conocido por su estabilidad y seguridad, es utilizado en entornos de servidores de alto rendimiento y en sistemas críticos en empresas y centros de datos.</li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
-</div>
 
-
-    <!-- singup Modal -->
-    <div class="modal fade" id="singupModal" tabindex="-1" aria-labelledby="singupModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Singup in icoder</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="cexampleInputPassword1">
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">create account</button>
-                    </form>
-            
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
- 
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://source.unsplash.com/1400x400/?code,technology" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Welcome To icoder </h5>
-                    <p>Technology News, Devlopment and updates</p>
-                    <button class="btn btn-primary">technology</button>
-                    <button class="btn btn-danger">code</button>
-                    <button class="btn btn-success">updates</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://source.unsplash.com/1400x400/?programing" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Best Vlog ever</h5>
-                    <p>Technology News, Devlopment and updates</p>
-                    <button class="btn btn-primary">technology</button>
-                    <button class="btn btn-danger">code</button>
-                    <button class="btn btn-success">updates</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://source.unsplash.com/1400x400/?code,gameing" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slove your Qurey</h5>
-                    <p>Technology News, Devlopment and updates</p>
-                    <button class="btn btn-primary">technology</button>
-                    <button class="btn btn-danger">code</button>
-                    <button class="btn btn-success">updates</button>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="container  my-4">
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Global Conferences</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250"
-                            src="https://source.unsplash.com/500x700/?tech,code,laptop" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Learn Designing</h3>
-                        <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto">create your mind in internet </p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250"
-                            src="https://source.unsplash.com/500x700/?tech,code," alt="">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-danger">World</strong>
-                        <h3 class="mb-0">Learn python </h3>
-                        <div class="mb-1 text-muted">oct 1 </div>
-                        <p class="card-text mb-auto">learn basic concept of python.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250"
-                            src="https://source.unsplash.com/500x700/?tech,code" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Learn css</strong>
-                        <h3 class="mb-0">learn types of flex-box and other </h3>
-                        <div class="mb-1 text-muted">oct 6</div>
-                        <p class="mb-auto">create our Art .</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250"
-                            src="https://source.unsplash.com/500x700/?programing,gang war" alt="">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2023–2024 i-coder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
