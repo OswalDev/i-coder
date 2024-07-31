@@ -61,3 +61,24 @@ p, ul {
 .btn-outline-danger {
     margin-left: 5px;
 }
+
+.header-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #f8f9fa; /* Color de fondo del encabezado */
+    border-bottom: 2px solid #ddd; /* Línea en la parte inferior del encabezado */
+}
+
+.header-container img {
+    max-width: 100%; /* Hace que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque para centrarla */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.header-title {
+    margin-top: 15px; /* Espacio superior para separar el título de la imagen */
+    font-size: 2rem; /* Tamaño de la fuente del título */
+    color: #343a40; /* Color del texto del título */
+    font-weight: bold; /* Grosor del texto del título */
+}
